@@ -43,7 +43,7 @@ function criarImagem(srcImagem){
         const galeria = document.getElementById('galeria')
 
         const imagem = document.createElement('img')
-        const legenda = document.createElement('leg')
+        const legenda = document.createElement('span')
 
         imagem.src = srcImagem.url
         legenda.textContent = srcImagem.nome
