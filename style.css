@@ -6,15 +6,20 @@
 
 body {
     padding-block: 8px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 .galeria {
     display: columns;
     columns: 3;
+    text-align: center;
 }
 
 .galeria img {
     width: 100%;
     padding-block: 8px;
 }
+
+.galeria leg {
+    color: rgb(255, 196, 0);
+}   

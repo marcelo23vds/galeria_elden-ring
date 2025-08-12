@@ -2,63 +2,58 @@
 
 const imagens = [
     {
-        nome: "Mesa redonda",
+        nome: "MESA REDONDA",
         url: './img/1.jpeg'
     },
     {
-        nome: "Dragão",
+        nome: "DRAGÃO",
         url: './img/2.jpg'
     },
     {
-        nome: "Castelo do Godrick",
+        nome: "CASTELO DO GODRICK",
         url: './img/3.jpg'
     },
     {
-        nome: "Terras intermédias",
+        nome: "TERRAS INTERMÉDIAS",
         url: './img/4.jpeg'
     },
     {
-        nome: "Árvore Sacra",
+        nome: "ÁRVORE SACRA",
         url: './img/5.jpg'
     },
     {
-        nome: "Alexsander",
+        nome: "ALEXSANDER",
         url: './img/6.jpg'
     },
     {
-        nome: "Dentro da Arvore",
+        nome: "DENTRO DA ÁRVORE",
         url: './img/7.png'
     },
     {
-        nome: "Final da Lua",
+        nome: "FINAL DA LUA",
         url: './img/8.jpeg'
     },
     {
-        nome: "Elden Ring",
+        nome: "ELDEN RING",
         url: './img/9.jpg'
     }
 ]
 
 function criarImagem(srcImagem){
         const galeria = document.getElementById('galeria')
+
         const imagem = document.createElement('img')
+        const legenda = document.createElement('leg')
+
         imagem.src = srcImagem.url
+        legenda.textContent = srcImagem.nome
+
         galeria.appendChild(imagem)
+        galeria.appendChild(legenda)
 }
 
 function carregarImagens(){
-    const galeria = document.getElementById('galeria')
-
-    // let contador = 0
-    // while(contador <= 7) {
-    //     const imagem = document.createElement('img')
-    //     imagem.src = imagens[contador]
-    //     galeria.appendChild(imagem)
-    //     contador++
-    // }
-
     imagens.forEach(criarImagem)
-    
 }
 
 carregarImagens()
